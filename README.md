@@ -2,7 +2,7 @@
 
 ### Description
 
-This repo exists to provide a (relatively) minimal reproduction of a bug I noticed when trying to build a Python protobuf client.
+This repo exists to provide a (relatively) minimal reproduction of a bug (https://github.com/grpc/grpc/issues/36950) I noticed when trying to build a Python protobuf client.
 
 The issue seems to be that using `grpc.aio.*_channel()` instead of just `grpc.*_channel()` puts something on the event loop that blocks indefinitely.
 
