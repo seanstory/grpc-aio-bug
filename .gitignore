@@ -3,5 +3,6 @@ lib
 include
 pyvenv.cfg
 *.egg-info
+__pycache__
 .idea
 *.iml
