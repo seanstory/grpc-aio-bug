@@ -1,0 +1,16 @@
+
+syntax = "proto3";
+
+package proto;
+
+service Greeter {
+  rpc Greeting(stream ClientGreeting) returns (stream ServerGreeting);
+}
+
+message ClientGreeting{
+  string message = 1;
+}
+
+message ServerGreeting{
+  string message = 1;
+}
